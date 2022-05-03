@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto+Mono:ital,wght@1,300&family=Ubuntu:wght@300&family=Water+Brush&display=swap" rel="stylesheet">
+    <title>Portifólio | Raphael Goulart</title>
+</head>
+<body>
+    <header class="flex">
+        <div>
+           <img src="img/logo.svg" alt="Logotipo Raphael Goulart" width="100px">
+        </div>
+        <ul>
+            <li>
+                <a href="https://github.com/Raphael-Goulart" target="_blank">
+                <img src="img/social_2.png" alt="Link com Logotipo do Github">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/raphael-goulart/" target="_blank">
+                <img src="img/social_1.png" alt="Link com Logotipo do Linkedin" width="65px">
+                </a>
+            </li>
+        </ul>
+        
+    </header>
+
+    <main>
+        <section class="container">
+            <div>
+                <h1>Raphael Goulart | Front-end Developer</h1>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+
+            <div style="display: none" id="about">
+                
+                <h3>Seja bem vindo ao meu portifólio!</h3>
+                <p>Tenho 34 anos e sou engenheiro civil de formação, mas decidi migrar de carreira<br>
+                     para área de tecnologia me tornando um desenvolvedor Front-end.</p>
+            </div>
+
+            <div class="form">
+                    <div>
+                    <p>Deixe seu contato!</p>
+                    </div>
+
+                <form>
+                    <input type="text" placeholder="seu email">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+    <footer class="container">
+        <p>Desenvolvido no Bootcamp Hiring Coders- 2022</p>
+        <p class="copyright"><img src="img/footer_logo.jpeg" alt="Logotipo da Hiring Coders" width="100px"></p>
+        <p>&copy; Copyright</p>  
+    </footer>
+   
+</body>
+</html>

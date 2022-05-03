@@ -1,0 +1,176 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+    
+}
+
+body {
+    background: #44A08D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    font-family: 'Ubuntu', sans-serif;
+     
+    color: bisque;
+    
+}
+
+header {
+    margin-bottom: 45px ;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1em;
+}
+
+.flex ul{
+    display: flex;
+}
+
+.flex li{
+    margin-top: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+a :hover {
+   opacity: 40%;
+   transition: 500ms;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+
+    font-size: 30px;
+    margin: 50px 0 0 0;
+
+}
+
+#animation {
+    transition: 300ms;
+}
+
+#arrow {
+    font-size: 25px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite; /*animação para piscar*/
+}
+
+@keyframes blink { /*chama a animação*/
+    to {
+        visibility: hidden; /* ficará com a visibilidade piscando*/
+    }
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 20px auto;
+    
+}
+
+.form{
+    width: 40%;
+    margin: 20px auto;
+}
+
+.form input {
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.form button {
+    width: 15%;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(31, 31, 28);
+    background: linear-gradient(to right, #093637,  #44A08D, #b4f1f1);
+    background-position: right bottom;
+    background-size: 200% 100%;
+    transition: all 300ms ease-out;
+
+}
+
+.form button:hover { 
+  background-position: left bottom;
+  color: antiquewhite;
+}
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: space-between;
+        font-size: 30px ;
+        
+    }
+
+    .container h1{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .form input {
+        margin-top: 5px;
+        width: 100%;
+
+    }
+
+    .form button{
+        margin-top: 5px;
+        width: 100%;
+       
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
